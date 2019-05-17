@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import Cardlist from '../comp/Cardlist';
 import Searchbox from '../comp/Searchbox';
-// import { robots} from '../robots'
 import Scroll from '../comp/Scroll'
 localStorage.setItem("startingURL", window.location.href);
 
@@ -31,7 +30,7 @@ class App extends Component {
     const filtered = robots.filter (robot => {
       return robot.name.toLowerCase().includes(searchfield.toLowerCase())
       })
-     return !robots.length ? 
+      return !robots.length ? 
        <h1> loading.......</h1> :
        (
           <div className='tc'>
@@ -41,9 +40,8 @@ class App extends Component {
               <Cardlist robots={filtered} />
             </Scroll>
           </div>
-        );
-      }
-  
+      );
+  }
 }
 
 export default App;
