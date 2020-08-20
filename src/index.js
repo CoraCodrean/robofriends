@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./cont/App.js";
+import App from "./container/App.js";
 import * as serviceWorker from "./serviceWorker";
 import "tachyons";
 
